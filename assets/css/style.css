@@ -1,13 +1,14 @@
 :root {
---baseGreen:#75bab3;
+--baseGreen:#75bab3; 
 --highlightGreen: #41b3a3;
 --white: #e0eae4;
-
+--subBackground: #825768; 
+--subBackgroundLight: #FBD69D;
 }
 
 body {
 background-color: var(--baseGreen);
-font-family:'Courier New', Courier, monospace,Arial, sans-serif
+font-family:'Courier New', Courier, monospace,Arial, sans-serif;
 }
 
 h1,
@@ -26,99 +27,89 @@ h6 {
 h1{
     font-size: 2rem;
     margin: 5px 0 5px 10px;
-    color: var(--white)
-    
+    color: var(--white);
 }
-
-
 
 header {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    
 }
 
-
-.header_section {
+header section {
     display: flex;
     flex-direction: column;
     justify-content:center;
     align-items: center;
     margin: 0 auto;
-    border: 5px solid var(--highlightGreen);
-    background-color:orange;
-    color: blanchedalmond;
+    background-color: var(--subBackground);
     height: 400px;
-    flex: 1 0 100%; 
+    flex: 1 0 100%;
+}
+
+.section_nav {
+    background-color: #FBD69D;
 }
 
 .header_img {
-    display: inherit;
+    /* display: inherit; */
     max-width: 300px;
     border-radius: 40%;
     border: 6px solid var(--highlightGreen);
 }
 
-header nav {
-    display: flex;
-    background-color: orangered;
-    font-size: 5rem;
-}
-
-@media screen and (min-width: 768px) {
-    .header_section  {
-      flex-basis: 50%;
-    }
-}
-
-/* .header_sectionone {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: flex-start;
-    background-color: blueviolet;
-    height: 400px;
-    width:400px; */
-
-/* } */
-
-
-/* .header_sectiontwo {
-    display: inline-block;
-    background-color: blueviolet;
-    max-height: 100px;
-    width: 100px;
-} */
-
-
-/* header nav {
-float: right;
-} */
-/* 
-header nav ul li {
-    float: right;
-    display: inline-block;
-    font-size: 2.5rem;
-    margin: 0 3rem 0 3rem;
-} */
-
-
-
-
-/* header section h1 {
-    text-align: center;
-    padding: 1rem;
-}
-
-header section span {
+header h1 span {
     font-style: italic;
     font-weight: bolder;
     color: var(--white);
     text-decoration: underline;
     text-transform: capitalize;
+}
+
+header nav {
+    font-size: 4rem;
+}
+
+.nav_ul li a {
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: none;
+    color: var(--subBackground);
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.nav_ul li:nth-of-type(even) {
     padding-left: 4rem;
-} */
+    margin: 0.5rem 0 0.5rem 0;
+}
+
+.nav_ul li a:hover {
+    border-left: 5px solid var(--baseGreen);
+    background-color: var(--subBackground);
+    border-radius: 20px;
+    color: var(--subBackgroundLight);
+}
+ 
+main section {
+    display: flex;
+    flex-direction: column;
+    background-color: wheat;
+    height: 400px;
+    flex: 1 0 100%;
+}
+
+.mywork {
+    display: flex;
+    flex-direction: row;
+    flex: 1 0 100%;
+}
+
+@media screen and (min-width: 768px) {
+    header section  {
+      flex-basis: 50%;
+    }
+}
 
 
