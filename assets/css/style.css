@@ -1,6 +1,6 @@
 :root {
 --base:#E7EEED; 
---highlightGreen: #41b3a3;
+--highlightGreen: #A0D098;
 --subBackground: #1544C0;
 --subBackgroundLight: #FBD69D;
 
@@ -49,7 +49,11 @@ header section {
 }
 
 .section_nav {
-    background-color:var(--base);
+    background-color: #e0e578;
+    background-image: url(../images/nav.JPG);
+    background-repeat: no-repeat;
+    background-size: 300px;
+    background-position: 500px 100px
 }
 
 .header_img {
@@ -73,7 +77,7 @@ header section {
 }
 
 .nav_ul li a:hover {
-    border-left: 3px solid var(--subBackground);
+    border-left: 4px solid var(--base);
     border-radius: 20px;
 }
 
@@ -115,11 +119,17 @@ main section:nth-of-type(4) {
 }
 
 .my_work section:nth-of-type(2) {
-    flex-basis: 20%;
+    flex-basis: 25%;
+    background-color: #d9ebf1;
+    background-image: url(../images/under_constucation.JPG);
+    background-size: 300px;
+    background-repeat:no-repeat;
+    background-position: center;
 }
 
 .my_work section:nth-of-type(3) {
-    flex-basis: 20%;
+    flex-basis: 25%;
+    background-color: #c7eaf2;
 }
 
 
@@ -139,6 +149,9 @@ main section:nth-of-type(4) {
     .my_work section:nth-of-type(1) {
         flex-basis: 100%;
     }
+    .section_nav {
+        background-size: 200px;
+        background-position: 210px 150px
     /* .my_work section:nth-of-type(2) {
         flex-basis: 100%; */
     }
