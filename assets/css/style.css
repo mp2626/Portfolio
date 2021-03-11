@@ -1,3 +1,5 @@
+/* contains values that are often used through out file, 
+making it easier to at a later date */
 :root {
 --base:#E7EEED; 
 --highlightGreen: #e0e578;
@@ -9,11 +11,13 @@
 --baseBlack: black;
 }
 
+/* setting base styles for the overall body */
 body {
 background-color: var(--base);
 font-family: "Ginger regular, Courier, monospace,Arial, sans-serif";
 }
 
+/* setting base styles for the h elements */
 h1,
 h2,
 h3,
@@ -27,6 +31,7 @@ h6 {
   text-align: center;
 }
 
+/* setting additional styles for the h1 element */
 h1{
     font-size: 40px;
     margin: 5px 0 5px 10px;
@@ -35,12 +40,14 @@ h1{
     text-decoration: none ;
 }
 
+/* setting flex properties for header elements */
 header {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
+/* setting styles for all header sections and applying flex properties*/
 header section {
     display: flex;
     flex-direction: column;
@@ -52,17 +59,20 @@ header section {
     flex: 1 0 100%;
 }
 
+/* setting sytling for the picture of michael perrin in the header section */
 .header_img {
     max-width: 300px;
     border-radius: 40%;
     border: 4px solid var(--base);
 }
 
+/* applies styling to header h1 */
 header h1 {
     top:455px;
     color: var(--base);    
 }
 
+/* applies styling to the header section nav */
 .section_nav {
     background-color: var(--highlightGreen);
     background-image: url(../images/nav.JPG);
@@ -71,11 +81,13 @@ header h1 {
     background-position: 510px 100px
 }
 
+/* applies styling to the even li */
 .nav_ul li:nth-of-type(even) {
     margin: 20px 0 20px 0;
     padding-left: 40px;
 }
 
+/* applies styling to the header nav ul li a */
 .nav_ul li a {
     text-decoration: none;
     color: var(--subBackground);
@@ -85,38 +97,44 @@ header h1 {
     font-family: var(--bold);
 }
 
+/* adds style to header nav ul li a when a user hovers over it */
 .nav_ul li a:hover {
     border-left: 4px solid var(--base);
     border-radius: 20px;
 }
 
+/* applies styling to main element*/
 main {
     display:block;
     flex-wrap: wrap;
 }
 
+/* applies styling to sections in main element*/
 main section {
     flex: 1 0 100%;
     height: 800px;
     border-top: 0.5px solid var(--gray);
 }
 
+/* applies styling to sections h1 in main element*/
 main section h1{
     margin-top: 60px;
     margin-bottom: 20px;
 }
 
+/* applies styling to sections p in main element*/
 main section p {
     text-align: center;
 }
     
-
+/* applies styling first div in the main element*/
 .main_div h1 {
     background: var(--avatarBackground);
     height: 100px;
     margin: 0px;
 }
 
+/* applies styling second div in the main element*/
 .my_work{
     display: flex;
     flex-direction: row;
@@ -124,17 +142,21 @@ main section p {
     flex-basis: 100%;
 } 
 
+/* applies styling to main div section */
 main div section {
     height: 400px;
     border: 0.5px solid var(--gray);
     border-radius: 10px;
 }
 
+/* adds styling to div with class of my_work when a user hovers */
 .my_work section:hover {
     border: 2px solid var(--gray) ;
     border-radius: 10px;
 }
 
+/* sets flex for first section in class my_work and adjusts 
+background to set avatar in the correct location */
 .my_work section:nth-of-type(1) {
     flex-basis: 40%;
     background-image: url(../images/contact_me.JPG);
@@ -144,6 +166,7 @@ main div section {
     background-color: var(--avatarBackground);
 }
 
+/* sets h1 styles in section one for class my_work */
 main div section:nth-of-type(1) h1:nth-of-type(1) {
     text-align: left;
     margin-top: 45px;
@@ -154,11 +177,14 @@ main div section:nth-of-type(1) h1:nth-of-type(1) {
     font-size: 20px;
 }
 
+/* sets h2 styles in section one for class my_work */
 main div section:nth-of-type(1) h2:nth-of-type(1) {
     text-align: left;
     margin-left: 66px;
 }
 
+/* sets flex for second section in class my_work and adjusts 
+background to set avatar in the correct location */
 .my_work section:nth-of-type(2) {
     flex-basis: 25%;
     background-image: url(../images/IMG_6347.JPG);
@@ -168,6 +194,8 @@ main div section:nth-of-type(1) h2:nth-of-type(1) {
     background-color: var(--avatarBackground);
 }
 
+
+/* sets h1 styles in section two for class my_work */
 main div section:nth-of-type(2) h1:nth-of-type(1) {
     text-align: left;
     margin-top: 41px;
@@ -178,11 +206,14 @@ main div section:nth-of-type(2) h1:nth-of-type(1) {
     font-size: 20px;
 }
 
+/* sets h2 styles in section two for class my_work */
 main div section:nth-of-type(2) h2:nth-of-type(1) {
     text-align: left;
     margin-left: 20px;
 }
 
+/* sets flex for third section in class my_work and adjusts 
+background to set avatar in the correct location */
 .my_work section:nth-of-type(3) {
     flex-basis: 25%;
     background-color: var(--avatarBackground);
@@ -193,6 +224,7 @@ main div section:nth-of-type(2) h2:nth-of-type(1) {
     background-color: var(--avatarBackground);
 }
 
+/* sets h1 styles in section three for class my_work */
 main div section:nth-of-type(3) h1:nth-of-type(1) {
     text-align: left;
     margin-top: 40px;
@@ -203,12 +235,7 @@ main div section:nth-of-type(3) h1:nth-of-type(1) {
     font-size: 20px;
 }
 
-/* main div section {
-    height: 400px;
-    border: 0.5px solid darkgray;
-    border-radius: 10px;
-} */
-
+/* sets styles for images within the my_work sections */
 .my_work section img {
     width: 40%;
     height: 25%;
@@ -218,15 +245,19 @@ main div section:nth-of-type(3) h1:nth-of-type(1) {
     margin-left: 10px;
 }
 
+/* sets styles for images within the my_work sections when a 
+users hovers*/
 .my_work section img:hover {
     border-radius: 20px;
     border: 3px solid var(--baseBlack);
 }
 
+/* sets system for contact sections li */
 .contact li {
     text-align: center;
-    
 }
+
+/* sets system for contact sections li a*/
 .contact li a {
     text-decoration: none;
     color: var(--baseBlack);
@@ -235,6 +266,8 @@ main div section:nth-of-type(3) h1:nth-of-type(1) {
     font-family: var(--bold);
 }
 
+/* adjust flex for the header section and main section
+targeting iphoneX users */
 @media screen and (min-width: 768px) {
     header section  {
       flex-basis: 50%;
@@ -244,6 +277,8 @@ main div section:nth-of-type(3) h1:nth-of-type(1) {
     }
 }
 
+/* adjusts flex for the nav and my_work sections and main section
+targeting iphoneX users. note this reduces avatar size and position */
 @media screen and (max-width: 768px) {
     .my_work section {
          flex-basis: 100%;
@@ -255,3 +290,21 @@ main div section:nth-of-type(3) h1:nth-of-type(1) {
         background-size: 200px;
         background-position: 210px 150px
     }
+    .section_nav {
+        background-size: 150px;
+        background-position: 250px 200px
+    }
+    .my_work section:nth-of-type(1) {
+        background-size: 150px;
+        background-position: 200px 100px;
+    }
+    .my_work section:nth-of-type(2) {
+        background-size: 150px;
+        background-position: 60px 100px;
+    }
+    .my_work section:nth-of-type(3) {
+        background-size: 150px;
+        background-position: 30px 100px;
+    }
+
+    /* need to work our img scaling but ran out of time */
